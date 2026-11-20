@@ -1,0 +1,159 @@
+<!doctype html>
+<!--
+  ═══════════════════════════════════════════════════════════════
+   LAST SHOW — the week
+   six films, six nights, one screen. monday the screen rests.
+   concept, design & code by ghostly.grl ♥
+  ═══════════════════════════════════════════════════════════════
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>the week — LAST SHOW</title>
+  <meta name="description" content="this week at LAST SHOW, bairro alto: six films, one a night at 23:40, each one ending before the last 28 tram. monday the screen rests.">
+  <meta name="author" content="ghostly.grl">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,300..800;1,400..600&family=IBM+Plex+Mono:wght@400;500&family=Monsieur+La+Doulaise&family=Archivo:wdth,wght@125,700..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/week.css?v=3">
+</head>
+<body class="pg-week">
+
+  <!-- ═══ cursor ═══ -->
+  <div class="cur" aria-hidden="true"><i class="cur__dot"></i><span class="cur__lbl"></span></div>
+
+  <!-- ═══ fixed bar ═══ -->
+  <header class="bar">
+    <a href="index.html" class="bar__logo" data-cur="home">LS<i></i></a>
+    <p class="bar__clock mono"><span>lisboa</span> <b data-clock>--:--</b> <em data-next>·</em></p>
+    <nav class="bar__nav">
+      <a href="tonight.html" data-cur="tonight">tonight</a>
+      <a href="week.html" data-cur="the week" aria-current="page">week</a>
+      <a href="room.html" data-cur="94 seats">room</a>
+      <a href="tram.html" data-cur="the 28">tram</a>
+      <a href="visit.html" data-cur="find us">visit</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ═══ 01 · the week — after CYBER ALIEN 2077: a pale panel, a giant vertical word, a big number, an index you can click ═══ -->
+    <section class="wh">
+      <div class="wh__panel">
+        <div class="wh__grid" aria-hidden="true"></div>
+        <header class="wh__top">
+          <a href="index.html" class="wh__logo" data-cur="home">LAST SHOW</a>
+          <nav class="wh__nav"><a href="tonight.html" data-cur="tonight">tonight <i>+</i></a><a href="room.html" data-cur="94 seats">room <i>+</i></a><a href="tram.html" data-cur="the 28">tram <i>+</i></a></nav>
+          <p class="wh__lang"><span>pt</span><b>en</b></p>
+          <span class="wh__burger" aria-hidden="true"><i></i><i></i></span>
+        </header>
+        <p class="wh__word" aria-hidden="true"><span>W</span><span>E</span><span>E</span><span>K</span></p>
+        <i class="wh__stripes" aria-hidden="true"></i>
+        <i class="wh__sq" aria-hidden="true"></i>
+        <b class="wh__small" data-f="wkno2">47</b>
+        <ol class="wh__idx"></ol>
+        <figure class="wh__pic">
+          <div class="wh__imgs"></div>
+        </figure>
+        <h1 class="wh__no"><small>week</small><span data-f="wkno">n°47</span></h1>
+        <div class="wh__txt">
+          <i class="wh__plus wh__plus--a" aria-hidden="true"></i>
+          <p><b data-f="ft">la la land</b> <span data-f="fd">friday 27.11 · 23:40 → 01:48</span> <span data-f="fs"></span></p>
+        </div>
+        <a class="wh__qr" href="tonight.html" data-f="qrlink" data-cur="that night">
+          <i class="wh__plus wh__plus--b" aria-hidden="true"></i>
+          <span class="wh__code" aria-hidden="true"></span>
+          <small>scan<br>at the<br>door</small>
+        </a>
+        <p class="wh__soc"><a href="#" data-cur="ig">instagram</a><a href="#" data-cur="letterboxd">letterboxd</a></p>
+        <a class="wh__thumb" href="tonight.html" data-f="thumblink" data-cur="see the night">
+          <span class="wh__play"><i></i></span>
+          <span class="wh__ti"></span>
+        </a>
+        <p class="wh__scroll">scroll<i></i></p>
+      </div>
+    </section>
+
+    <!-- ═══ 02 · six nights — after DREAM BEATS: a treatment deck on tan, one slide per film ═══ -->
+    <section class="db">
+      <div class="db__row db__row--2">
+        <article class="sl sl--cover">
+          <figure class="sl__img slot" data-film="cover"></figure>
+          <div class="sl__in">
+            <p class="sl__kick">pick your night:</p>
+            <h2 class="sl__h">SIX FILMS</h2>
+            <p class="sl__sub" data-f="range">24.11 – 29.11 · one screen · 23:40</p>
+          </div>
+        </article>
+        <article class="sl sl--concept" data-n="0"></article>
+      </div>
+      <article class="sl sl--wide" data-n="1"></article>
+      <div class="db__row db__row--2">
+        <article class="sl sl--mood">
+          <div class="sl__tiles"></div>
+          <p class="sl__dir">every still, every night</p>
+          <p class="sl__page">LAST SHOW | MOOD &amp; TONE</p>
+        </article>
+        <article class="sl sl--title" data-n="2"></article>
+      </div>
+      <article class="sl sl--wide" data-n="3"></article>
+      <div class="db__row db__row--2">
+        <article class="sl sl--concept" data-n="4"></article>
+        <article class="sl sl--title" data-n="5"></article>
+      </div>
+    </section>
+
+    <!-- ═══ 03 · monday — after THANK YOU: one heavy line over a blurred still ═══ -->
+    <section class="mo">
+      <figure class="mo__img slot" data-img="HOME/room.jpg" data-tone="velvet" aria-hidden="true"></figure>
+      <h2 class="mo__h"><span>MONDAY,</span> <span>WE REST</span></h2>
+      <p class="mo__p">the screen rests, the projector cools, the usher sleeps in. for anything else: <a href="mailto:hello@lastshow.pt" data-cur="write">hello@lastshow.pt</a></p>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div class="ft__top">
+      <div class="ft__logo"><b>L A S T &nbsp;S H O W</b><span>lisboa · one screen</span><span>est. 1931 · again 2019</span></div>
+      <div class="ft__mid mono"><span>no trailers. no ads.</span><span>phones off, hearts on.</span><span>press L for house lights.</span></div>
+      <div class="ft__right mono">
+        <p>if you’d like a seat, a private screening or just to say the film made you cry, write to us.</p>
+        <a href="mailto:hello@lastshow.pt" data-cur="write">hello@lastshow.pt</a>
+        <p class="ft__addr">LAST SHOW cinema<br>rua da rosa 113, bairro alto<br>1200-385 lisboa, portugal<br>tue–sun · doors 23:00 · film 23:40</p>
+      </div>
+    </div>
+    <div class="ft__bottom">
+      <h2 class="ft__h">SEE YOU<br>AT 23:40</h2>
+      <span class="mono">© LAST SHOW 2026 · a concept cinema</span>
+      <span class="ft-sign">concept, design &amp; code by ghostly.grl ♥</span>
+    </div>
+  </footer>
+
+  <!-- house lights (press L / konami) -->
+  <div class="lights" aria-hidden="true"><p class="mono">phones off. the film is starting.</p></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js?v=11"></script>
+  <script src="js/week.js?v=2"></script>
+</body>
+</html>
+<!--
+          ___________________
+         |  _______________  |       /\_/\
+         | |               | |      ( o.o )  <3
+         | |  THE WEEK     | |       > ^ <
+         | |_______________| |      (")_(")
+         |___________________|      row f, seat 7
+
+   ┌─┐┬ ┬┌─┐┌─┐┌┬┐┬ ┬ ┬  ┌─┐┬─┐┬
+   │ ┬├─┤│ │└─┐ │ │ └┬┘  │ ┬├┬┘│
+   └─┘┴ ┴└─┘└─┘ ┴ ┴─┘┴ o └─┘┴└─┴─┘ ♥
+
+   LAST SHOW · lisboa · one film a night, then the tram.
+-->

@@ -1,0 +1,210 @@
+<!doctype html>
+<!--
+  ═══════════════════════════════════════════════════════════════
+   LAST SHOW — visit
+   rua da rosa 113, bairro alto. a red door, a long corridor, one screen.
+   concept, design & code by ghostly.grl ♥
+  ═══════════════════════════════════════════════════════════════
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>visit — LAST SHOW</title>
+  <meta name="description" content="LAST SHOW is at rua da rosa 113, bairro alto, lisboa. doors 23:00, film 23:40, tuesday to sunday. €6 at the door. four minutes up from the 28 at camões.">
+  <meta name="author" content="ghostly.grl">
+  <meta name="theme-color" content="#2b2b2a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,300..800;1,400..600&family=IBM+Plex+Mono:wght@400;500&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/visit.css?v=5">
+</head>
+<body class="pg-visit">
+
+  <!-- ═══ cursor ═══ -->
+  <div class="cur" aria-hidden="true"><i class="cur__dot"></i><span class="cur__lbl"></span></div>
+
+  <!-- ═══ fixed bar ═══ -->
+  <header class="bar">
+    <a href="index.html" class="bar__logo" data-cur="home">LS<i></i></a>
+    <p class="bar__clock mono"><span>lisboa</span> <b data-clock>--:--</b> <em data-next>·</em></p>
+    <nav class="bar__nav">
+      <a href="tonight.html" data-cur="tonight">tonight</a>
+      <a href="week.html" data-cur="the week">week</a>
+      <a href="room.html" data-cur="94 seats">room</a>
+      <a href="tram.html" data-cur="the 28">tram</a>
+      <a href="visit.html" data-cur="find us" aria-current="page">visit</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ═══ 01 · find us — after BASECAMP: a grey world outside, a glass panel, a blurred figure, three columns of facts, three small photos ═══ -->
+    <section class="bc">
+      <figure class="bc__out slot" data-img="VISIT/outside.jpg" data-tone="duo" data-note="lisbon from above, black and white, the bridge far away"></figure>
+      <div class="bc__panel">
+        <div class="bc__fig">
+          <figure class="bc__sharp slot no-label" data-img="VISIT/figure.jpg" data-tone="duo"></figure>
+          <figure class="bc__blur slot" data-img="VISIT/figure-blur.jpg" data-tone="duo" data-note="someone at a window, from behind (a blurred copy on top)"></figure>
+        </div>
+
+        <div class="bc__top">
+          <nav class="bc__pills">
+            <a href="#where" class="bc__pill is-on" data-cur="the address">find us</a>
+            <a href="#way" class="bc__pill" data-cur="the way up">the way</a>
+            <a href="#before" class="bc__pill" data-cur="read this">before</a>
+          </nav>
+          <p class="bc__logo">LAST SHOW</p>
+          <div class="bc__right">
+            <label class="bc__search"><span class="sr">where are you?</span><input type="text" list="bc-places" placeholder="where are you?" autocomplete="off" spellcheck="false"></label>
+            <datalist id="bc-places"></datalist>
+            <a href="#yours" class="bc__pill" data-cur="your seat">seat</a>
+            <a href="#yours" class="bc__pill bc__pill--n" data-f="held-n">0</a>
+          </div>
+        </div>
+        <p class="bc__ans" aria-live="polite"></p>
+
+        <div class="bc__cols" id="where">
+          <article class="bc__col">
+            <dl>
+              <div><dt>N:</dt><dd class="bc__n">38.7131</dd></div>
+              <div class="w"><dt>Title:</dt><dd>rua da rosa 113</dd></div>
+              <div><dt>District:</dt><dd>bairro alto</dd><dt>Floor:</dt><dd>street</dd></div>
+              <div><dt>Since:</dt><dd>1931</dd><dt>Door:</dt><dd>red, wooden</dd></div>
+              <div><dt>Type:</dt><dd>one screen</dd><dt>Seats:</dt><dd>94</dd></div>
+            </dl>
+            <p>halfway up rua da rosa, between a tasca that closes at midnight and a barber who never seems to close. there is no sign, only the number 113 painted over a red door and a light on above it when there is a film. push the door, follow the corridor, the room is at the end. if the light is off, it is monday.</p>
+          </article>
+          <article class="bc__col">
+            <dl>
+              <div><dt>W:</dt><dd class="bc__n">9.1452</dd></div>
+              <div class="w"><dt>Title:</dt><dd>the hours</dd></div>
+              <div><dt>Days:</dt><dd>tue – sun</dd><dt>Monday:</dt><dd>we rest</dd></div>
+              <div><dt>Doors:</dt><dd>23:00</dd><dt>Film:</dt><dd>23:40</dd></div>
+              <div><dt>Bar:</dt><dd>till 23:35</dd><dt>Out:</dt><dd>before 01:49</dd></div>
+            </dl>
+            <p>one film a night, never a trailer. the doors open at eleven, the bar pours until twenty-five to midnight and the lights go down at 23:40 exactly. every film ends in time for the last 28 at camões. <b data-f="next">the next one: —</b></p>
+          </article>
+          <article class="bc__col">
+            <dl>
+              <div><dt>↑:</dt><dd class="bc__n">74 m</dd></div>
+              <div class="w"><dt>Title:</dt><dd>the tickets</dd></div>
+              <div><dt>Price:</dt><dd>€6</dd><dt>Under 25:</dt><dd>€4</dd></div>
+              <div><dt>Where:</dt><dd>at the door</dd><dt>Pay:</dt><dd>cash, card</dd></div>
+              <div><dt>Hold:</dt><dd>online</dd><dt>Until:</dt><dd>23:30</dd></div>
+            </dl>
+            <p>tickets are sold at the door from 23:00, by whoever is not making coffee. you can hold a seat on the <a href="room.html#seats" data-cur="pick one">seat map</a> and say its name at the door; we keep it until half past eleven. f7 is never sold. nobody remembers why.</p>
+          </article>
+        </div>
+
+        <ul class="bc__trip">
+          <li><figure class="slot" data-img="VISIT/door.jpg" data-tone="duo" data-note="a worn red door in a lisbon street"></figure><span>the door</span></li>
+          <li><figure class="slot" data-img="VISIT/steps.jpg" data-tone="duo" data-note="steps going up between old buildings"></figure><span>the hill</span></li>
+          <li><figure class="slot" data-img="VISIT/beam.jpg" data-tone="duo" data-note="a projector beam in the dark"></figure><span>the beam</span></li>
+        </ul>
+        <p class="bc__foot mono"><span>rua da rosa 113 · 1200-385 lisboa</span><span data-f="clock">--:--</span></p>
+      </div>
+    </section>
+
+    <!-- ═══ 02 · the way up — the same panel, a map of the bairro, four ways in ═══ -->
+    <section class="wy" id="way">
+      <figure class="wy__out slot" data-img="VISIT/street.jpg" data-tone="duo" data-note="a lisbon street at night, tram rails, black and white"></figure>
+      <div class="wy__panel">
+        <div class="wy__head">
+          <p class="mono">02 · the way up</p>
+          <h2 class="wy__h">all roads go <i>uphill</i></h2>
+          <nav class="wy__tabs" role="tablist"></nav>
+        </div>
+        <div class="wy__map">
+          <svg viewBox="0 0 1000 700" aria-label="map of the bairro alto, not to scale">
+            <g class="wy__streets"></g>
+            <path class="wy__route" d=""/>
+            <circle class="wy__you" r="9"/>
+            <g class="wy__pin"><circle r="15"/><circle r="5"/></g>
+          </svg>
+          <p class="wy__scale mono">bairro alto · not to scale · north is up</p>
+        </div>
+        <div class="wy__steps">
+          <p class="wy__min"><b data-f="min">4′</b><span data-f="from">from the 28 at camões</span></p>
+          <ol></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 03 · before you come — the BASECAMP fact columns again, on a dark room ═══ -->
+    <section class="bf" id="before">
+      <figure class="bf__bg slot" data-img="VISIT/dark.jpg" data-tone="night" data-note="empty cinema seats in the dark, a light far away"></figure>
+      <div class="bf__in">
+        <p class="mono bf__k">03 · before you come</p>
+        <h2 class="bf__h">six things the usher<br>would tell you <i>anyway</i></h2>
+        <div class="bf__grid"></div>
+      </div>
+    </section>
+
+    <!-- ═══ 04 · your night — the last panel: the film, the seat, the tram, in your calendar ═══ -->
+    <section class="yn" id="yours">
+      <figure class="yn__out slot" data-film data-tone="duo" data-note="a still from the film"></figure>
+      <div class="yn__panel">
+        <p class="mono yn__k">04 · your night</p>
+        <h2 class="yn__t" data-f="title">—</h2>
+        <dl class="yn__dl">
+          <div><dt>Night:</dt><dd data-f="night">—</dd></div>
+          <div><dt>Doors:</dt><dd>23:00</dd></div>
+          <div><dt>Film:</dt><dd>23:40 – <span data-f="end">—</span></dd></div>
+          <div><dt>Seat:</dt><dd data-f="seat">none held</dd></div>
+          <div><dt>Tram:</dt><dd>01:52 · camões · <span data-f="spare">—</span></dd></div>
+          <div><dt>Bring:</dt><dd>€6, a jumper, nobody you’ll talk to during the film</dd></div>
+        </dl>
+        <div class="yn__cta">
+          <a class="bc__pill bc__pill--w" data-f="seatlink" href="room.html#seats" data-cur="94 seats">pick a seat</a>
+          <button class="bc__pill" type="button" data-ics data-cur=".ics">add to calendar</button>
+          <a class="bc__pill" data-f="filmlink" href="tonight.html" data-cur="the film">the film</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div class="ft__top">
+      <div class="ft__logo"><b>L A S T &nbsp;S H O W</b><span>lisboa · one screen</span><span>est. 1931 · again 2019</span></div>
+      <div class="ft__mid mono"><span>no trailers. no ads.</span><span>phones off, hearts on.</span><span>press L for house lights.</span></div>
+      <div class="ft__right mono">
+        <p>if you’d like a seat, a private screening or just to say the film made you cry, write to us.</p>
+        <a href="mailto:hello@lastshow.pt" data-cur="write">hello@lastshow.pt</a>
+        <p class="ft__addr">LAST SHOW cinema<br>rua da rosa 113, bairro alto<br>1200-385 lisboa, portugal<br>tue–sun · doors 23:00 · film 23:40</p>
+      </div>
+    </div>
+    <div class="ft__bottom">
+      <h2 class="ft__h">SEE YOU<br>AT 23:40</h2>
+      <span class="mono">© LAST SHOW 2026 · a concept cinema</span>
+      <span class="ft-sign">concept, design &amp; code by ghostly.grl ♥</span>
+    </div>
+  </footer>
+
+  <!-- house lights (press L / konami) -->
+  <div class="lights" aria-hidden="true"><p class="mono">phones off. the film is starting.</p></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js?v=11"></script>
+  <script src="js/visit.js?v=1"></script>
+</body>
+</html>
+<!--
+            ___________
+           |  _______  |        /\_/\
+           | |  113  | |       ( o.o )  <3
+           | |       | |        > ^ <
+           | |     o | |       (")_(")
+           |_|_______|_|       push the red door
+
+   ┌─┐┬ ┬┌─┐┌─┐┌┬┐┬ ┬ ┬  ┌─┐┬─┐┬
+   │ ┬├─┤│ │└─┐ │ │ └┬┘  │ ┬├┬┘│
+   └─┘┴ ┴└─┘└─┘ ┴ ┴─┘┴ o └─┘┴└─┴─┘ ♥
+
+   LAST SHOW · lisboa · one film a night, then the tram.
+-->

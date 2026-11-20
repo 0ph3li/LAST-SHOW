@@ -1,0 +1,231 @@
+<!doctype html>
+<!--
+  ═══════════════════════════════════════════════════════════════
+   LAST SHOW — tonight
+   one film, one screen, 23:40. then the last 28.
+   concept, design & code by ghostly.grl ♥
+  ═══════════════════════════════════════════════════════════════
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tonight — LAST SHOW</title>
+  <meta name="description" content="tonight at LAST SHOW, bairro alto: the film, the night minute by minute, the weather for the walk to the last 28.">
+  <meta name="author" content="ghostly.grl">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,300..800;1,400..600&family=IBM+Plex+Mono:wght@400;500&family=Monsieur+La+Doulaise&family=Playfair+Display:ital,wght@0,600..800;1,500..700&family=Archivo:wdth,wght@125,700..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/tonight.css?v=7">
+</head>
+<body class="pg-tonight">
+
+  <!-- ═══ cursor ═══ -->
+  <div class="cur" aria-hidden="true"><i class="cur__dot"></i><span class="cur__lbl"></span></div>
+
+  <!-- ═══ fixed bar ═══ -->
+  <header class="bar">
+    <a href="index.html" class="bar__logo" data-cur="home">LS<i></i></a>
+    <p class="bar__clock mono"><span>lisboa</span> <b data-clock>--:--</b> <em data-next>·</em></p>
+    <nav class="bar__nav">
+      <a href="tonight.html" data-cur="tonight" aria-current="page">tonight</a>
+      <a href="week.html" data-cur="the week">week</a>
+      <a href="room.html" data-cur="94 seats">room</a>
+      <a href="tram.html" data-cur="the 28">tram</a>
+      <a href="visit.html" data-cur="find us">visit</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ═══ 01 · tonight — after EPI.02 MY DOGS: a face, a giant yellow title, the story in caps ═══ -->
+    <section class="th">
+      <figure class="th__img slot" data-film="3"></figure>
+      <div class="th__shade"></div>
+      <h1 class="th__title">
+        <span class="th__ln"><span data-f="when">tonight · n°04</span></span>
+        <span class="th__ln"><span data-f="title">la la land</span></span>
+      </h1>
+      <p class="th__about">about</p>
+      <p class="th__syn" data-f="syn"></p>
+      <p class="th__no"><span data-f="day">fri</span><b>23:40</b></p>
+      <p class="th__foot">
+        <a class="th__cta" href="room.html" data-cur="94 seats">pick a seat <span data-f="left">· 22 left</span></a>
+        <span class="th__count mono" data-f="count">starts in --:--:--</span>
+      </p>
+    </section>
+
+    <!-- ═══ 02 · the poster — after THE DRAMA: a framed one-sheet, two names, the title with a script word through it, three stills ═══ -->
+    <section class="tp" id="poster">
+      <div class="tp__frame">
+        <p class="tp__cast"><span data-f="c1">emma stone</span><span data-f="c2">ryan gosling</span></p>
+        <div class="tp__box"><figure class="tp__pic slot" data-film="4"></figure></div>
+        <h2 class="tp__title"><span class="tp__word" data-f="title">la la land</span><i class="tp__script">tonight</i></h2>
+        <div class="tp__stills">
+          <figure class="tp__still slot" data-film="5"></figure>
+          <figure class="tp__still slot" data-film="6"></figure>
+          <figure class="tp__still slot" data-film="7"></figure>
+        </div>
+        <p class="tp__by">a film by <span data-f="dir">damien chazelle</span></p>
+      </div>
+    </section>
+
+    <!-- ═══ 03 · the film — after JOKER: one tinted still, the story on the left, the facts in a column, a trailer box we won’t play ═══ -->
+    <section class="tj" id="film">
+      <div class="tj__bg slot no-label" data-film="2" aria-hidden="true"></div>
+      <div class="tj__panel">
+        <figure class="tj__img slot" data-film="8"></figure>
+        <div class="tj__tint"></div>
+        <nav class="tj__nav">
+          <span class="tj__burger" aria-hidden="true"><i></i><i></i><i></i></span>
+          <a href="#poster" data-cur="poster">poster</a>
+          <a href="#night" data-cur="minute by minute">the night</a>
+          <a href="#weather" data-cur="the walk">weather</a>
+          <a href="#bar" data-cur="a bica">bar</a>
+        </nav>
+        <div class="tj__copy">
+          <h2 class="tj__title" data-f="title">la la land</h2>
+          <p class="tj__syn" data-f="syn"></p>
+          <a class="tj__more" href="week.html" data-cur="the week">the rest of the week <i></i></a>
+        </div>
+        <div class="tj__facts">
+          <p class="tj__follow"><span>follow us</span><a href="#" data-cur="ig">ig</a><a href="#" data-cur="letterboxd">lbxd</a></p>
+          <dl>
+            <div><dt>year</dt><dd data-f="year">2016</dd></div>
+            <div><dt>director</dt><dd data-f="dir">damien chazelle</dd></div>
+            <div><dt>runtime</dt><dd data-f="run">128 min · lights up 01:48</dd></div>
+            <div><dt>genre</dt><dd data-f="genre">musical, romance</dd></div>
+          </dl>
+          <button class="tj__trailer" type="button" data-cur="play">
+            <span class="tj__thumb slot no-label" data-film="1"></span>
+            <span class="tj__play"><i></i></span>
+            <b class="tj__tl">watch trailer</b>
+          </button>
+        </div>
+        <div class="tj__roll">
+          <ol class="tj__dots" aria-hidden="true"><li></li><li></li><li></li><li></li></ol>
+          <div class="tj__item"><b data-f="rn">01</b><span data-f="rk">actors</span><em data-f="rv">emma stone, ryan gosling</em></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 04 · the night, in order — after NORVALE: a cream card on black, big serif title, a photo in the O, floating cards ═══ -->
+    <section class="tw" id="night">
+      <header class="tw__head"><b>LAST SHOW</b><span>the night</span><span data-f="no">04</span><span>rua da rosa 113</span></header>
+      <p class="tw__sub">doors <i>×</i> <b>the last 28</b></p>
+      <div class="tw__stage">
+        <div class="tw__card">
+          <div class="tw__cardtop"><span class="tw__star">✦</span><b>LAST SHOW</b><span class="tw__menu"><i></i><i></i></span></div>
+          <h2 class="tw__title">LIGHTS<br><em>D<span class="tw__o"><figure class="slot" data-img="TONIGHT/usher.jpg" data-tone="tungsten" data-note="the usher"></figure></span>WN</em><span class="tw__spark">✦</span></h2>
+          <p class="tw__quote"><span>“</span>five times you need to know tonight, and one you can’t miss.<span>”</span></p>
+          <a class="tw__btn" href="room.html" data-cur="94 seats">pick a seat <i>+</i></a>
+          <figure class="tw__land slot" data-img="TONIGHT/rooftops.jpg" data-tone="tejo" data-note="the rooftops of bairro alto from the cinema roof, blue hour, terracotta and antennas"></figure>
+          <article class="tw__step">
+            <p class="tw__steptop"><b data-f="sn">01</b><span data-f="st">23:00</span><button type="button" class="tw__next" aria-label="next" data-cur="next">+</button></p>
+            <h3 data-f="sh">doors open.</h3>
+            <p data-f="sp"></p>
+            <figure class="tw__stepimg slot" data-img="TONIGHT/doors.jpg" data-tone="amber" data-note="the cinema doors on rua da rosa, open, warm light inside"></figure>
+            <p class="tw__from">— from the usher’s notebook</p>
+          </article>
+        </div>
+        <figure class="tw__f tw__f--a slot" data-img="TONIGHT/queue.jpg" data-tone="street" data-note="the queue on rua da rosa, 22:55"></figure>
+        <div class="tw__f tw__f--seats"><b>seats taken</b><small>94 seats, one screen, no second show</small><span><em data-f="pct">72</em>%</span></div>
+        <p class="tw__f tw__f--dots" aria-hidden="true"><i></i><i></i><i></i></p>
+        <figure class="tw__f tw__f--b slot" data-img="TONIGHT/projectionist.jpg" data-tone="night" data-note="the projectionist, out of focus, walking past the booth window"></figure>
+        <div class="tw__f tw__f--aa"><p><b>rated</b><span class="tw__tag">m/12</span></p><small data-f="lang">english · portuguese subtitles</small><strong data-f="ratio">2.55</strong></div>
+      </div>
+      <p class="tw__end"><span>“</span>the film never runs late. the tram sometimes does.<br>we plan for the first one.<span>”</span></p>
+    </section>
+
+    <!-- ═══ 05 · the weather for the walk — after THE.WEATHER: a wet window, the temperature at 23:40, the details on the right ═══ -->
+    <section class="wx" id="weather">
+      <div class="wx__panel">
+        <div class="wx__left">
+          <figure class="wx__img slot" data-img="TONIGHT/window.jpg" data-tone="tejo" data-note="rain on the cinema window at night, the street lights blurred behind"></figure>
+          <p class="wx__logo">the.night</p>
+          <div class="wx__now">
+            <b class="wx__deg"><span data-f="temp">16</span>°</b>
+            <p class="wx__city">lisboa<small data-f="wxwhen">23:40 · friday, 21 nov</small></p>
+            <p class="wx__cond"><svg class="wx__icon" viewBox="0 0 40 40" aria-hidden="true"></svg><span data-f="cond">clear</span></p>
+          </div>
+        </div>
+        <div class="wx__right">
+          <p class="wx__search"><span>another night</span><b aria-hidden="true">⌕</b></p>
+          <ul class="wx__nights"></ul>
+          <h3>tonight’s details</h3>
+          <dl class="wx__dl">
+            <div><dt>cloudy</dt><dd data-f="cloud">—</dd></div>
+            <div><dt>chance of rain</dt><dd data-f="rain">—</dd></div>
+            <div><dt>wind</dt><dd data-f="wind">—</dd></div>
+            <div><dt>seats left</dt><dd data-f="seats">—</dd></div>
+            <div><dt>last 28</dt><dd data-f="tram">01:52 · camões</dd></div>
+          </dl>
+          <p class="wx__tip" data-f="tip">a good night to walk the long way.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 06 · the bar — after MUSIC AND SOUND DESIGN: a big outlined number, a heavy title, a cup from above ═══ -->
+    <section class="bb" id="bar">
+      <div class="bb__copy">
+        <b class="bb__n">23:00</b>
+        <h2 class="bb__title">A BICA BEFORE<br>THE FILM</h2>
+        <p class="bb__txt">the bar opens with the doors and closes at 23:30, so the room is quiet by the time the lights go down. coffee, ginjinha, a glass of vinho verde, and a pastel de nata from the bakery next door. no popcorn in the room: you will hear every line, and so will the person beside you. if you are running from work, tell us at the door and we’ll keep you a bica on the counter.</p>
+        <ul class="bb__menu">
+          <li><span>bica</span><i></i><b>0,90</b></li>
+          <li><span>galão</span><i></i><b>1,60</b></li>
+          <li><span>ginjinha, in chocolate</span><i></i><b>1,80</b></li>
+          <li><span>vinho verde</span><i></i><b>3,00</b></li>
+          <li><span>pastel de nata</span><i></i><b>1,30</b></li>
+        </ul>
+      </div>
+      <figure class="bb__cup slot" data-img="TONIGHT/bica.jpg" data-tone="velvet" data-note="a bica from above on the bar counter, hard light, a long shadow"></figure>
+      <p class="bb__foot mono"><span>LAST SHOW · the bar</span><span>open 23:00 – 23:30</span><span>cash &amp; card</span></p>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div class="ft__top">
+      <div class="ft__logo"><b>L A S T &nbsp;S H O W</b><span>lisboa · one screen</span><span>est. 1931 · again 2019</span></div>
+      <div class="ft__mid mono"><span>no trailers. no ads.</span><span>phones off, hearts on.</span><span>press L for house lights.</span></div>
+      <div class="ft__right mono">
+        <p>if you’d like a seat, a private screening or just to say the film made you cry, write to us.</p>
+        <a href="mailto:hello@lastshow.pt" data-cur="write">hello@lastshow.pt</a>
+        <p class="ft__addr">LAST SHOW cinema<br>rua da rosa 113, bairro alto<br>1200-385 lisboa, portugal<br>tue–sun · doors 23:00 · film 23:40</p>
+      </div>
+    </div>
+    <div class="ft__bottom">
+      <h2 class="ft__h">SEE YOU<br>AT 23:40</h2>
+      <span class="mono">© LAST SHOW 2026 · a concept cinema</span>
+      <span class="ft-sign">concept, design &amp; code by ghostly.grl ♥</span>
+    </div>
+  </footer>
+
+  <!-- house lights (press L / konami) -->
+  <div class="lights" aria-hidden="true"><p class="mono">phones off. the film is starting.</p></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js?v=11"></script>
+  <script src="js/tonight.js?v=8"></script>
+</body>
+</html>
+<!--
+          ___________________
+         |  _______________  |       /\_/\
+         | |               | |      ( o.o )  <3
+         | |  TONIGHT      | |       > ^ <
+         | |_______________| |      (")_(")
+         |___________________|      row f, seat 7
+
+   ┌─┐┬ ┬┌─┐┌─┐┌┬┐┬ ┬ ┬  ┌─┐┬─┐┬
+   │ ┬├─┤│ │└─┐ │ │ └┬┘  │ ┬├┬┘│
+   └─┘┴ ┴└─┘└─┘ ┴ ┴─┘┴ o └─┘┴└─┴─┘ ♥
+
+   LAST SHOW · lisboa · one film a night, then the tram.
+-->

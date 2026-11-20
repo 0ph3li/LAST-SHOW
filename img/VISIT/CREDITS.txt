@@ -1,0 +1,10 @@
+photos for visit.html, from unsplash (free license). swap for your own with the same names.
+
+outside.jpg      lisbon from above, the bridge      https://unsplash.com/photos/1603666969900-a560899c8c2c
+figure.jpg       someone at a window (cropped)      https://unsplash.com/photos/1534330207526-8e81f10ec6fc
+figure-blur.jpg  the same crop, blurred (made from figure.jpg)
+door.jpg         a worn red door, number 26         https://unsplash.com/photos/1650896822909-cb979f7f98e6
+steps.jpg        steps between old buildings        https://unsplash.com/photos/1631880688686-d382a734976c
+beam.jpg         a projector in the smoke           https://unsplash.com/photos/1478720568477-152d9b164e26
+street.jpg       a lisbon street, tram rails        https://unsplash.com/photos/1734318441186-607a77bd217d
+dark.jpg         empty seats in the dark            https://unsplash.com/photos/1680528221313-f34de1918bef

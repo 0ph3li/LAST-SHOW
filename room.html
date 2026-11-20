@@ -1,0 +1,191 @@
+<!doctype html>
+<!--
+  ═══════════════════════════════════════════════════════════════
+   LAST SHOW — the room
+   94 red seats, one screen, a 35mm projector from 1962.
+   concept, design & code by ghostly.grl ♥
+  ═══════════════════════════════════════════════════════════════
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>the room — LAST SHOW</title>
+  <meta name="description" content="the room at LAST SHOW, bairro alto: a 1931 picture house with 94 red seats, one screen and a 35mm projector. pick your seat for tonight.">
+  <meta name="author" content="ghostly.grl">
+  <meta name="theme-color" content="#d4170c">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,300..800;1,400..600&family=IBM+Plex+Mono:wght@400;500&family=Monsieur+La+Doulaise&family=Archivo:wdth,wght@100..125,500..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/room.css?v=3">
+</head>
+<body class="pg-room">
+
+  <!-- ═══ cursor ═══ -->
+  <div class="cur" aria-hidden="true"><i class="cur__dot"></i><span class="cur__lbl"></span></div>
+
+  <!-- ═══ fixed bar ═══ -->
+  <header class="bar">
+    <a href="index.html" class="bar__logo" data-cur="home">LS<i></i></a>
+    <p class="bar__clock mono"><span>lisboa</span> <b data-clock>--:--</b> <em data-next>·</em></p>
+    <nav class="bar__nav">
+      <a href="tonight.html" data-cur="tonight">tonight</a>
+      <a href="week.html" data-cur="the week">week</a>
+      <a href="room.html" data-cur="94 seats" aria-current="page">room</a>
+      <a href="tram.html" data-cur="the 28">tram</a>
+      <a href="visit.html" data-cur="find us">visit</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ═══ 01 · the room — after BLADE RUNNER 2049: a red monochrome screen in a black frame, a lone figure, a slider 01/04 ═══ -->
+    <section class="rb">
+      <div class="rb__panel">
+        <div class="rb__imgs">
+          <figure class="rb__img slot is-on" data-img="ROOM/slide-1.jpg" data-tone="neon" data-note="someone alone in the aisle before the doors open"></figure>
+          <figure class="rb__img slot" data-img="ROOM/slide-2.jpg" data-tone="neon" data-note="the room from the back, plaster and gilt"></figure>
+          <figure class="rb__img slot" data-img="ROOM/slide-3.jpg" data-tone="neon" data-note="the balcony arches, closed since 1987"></figure>
+          <figure class="rb__img slot" data-img="ROOM/slide-4.jpg" data-tone="neon" data-note="the rows from the aisle"></figure>
+        </div>
+        <aside class="rb__rail">
+          <a href="index.html" class="rb__logo" data-cur="home">LS</a>
+          <b class="rb__mini">LAST<br>SHOW<br>1931</b>
+          <nav class="rb__soc"><a href="#" data-cur="ig">ig</a><a href="#" data-cur="letterboxd">lb</a><a href="mailto:hello@lastshow.pt" data-cur="write">@</a></nav>
+        </aside>
+        <header class="rb__nav">
+          <nav class="rb__l"><a href="tonight.html" data-cur="tonight">tonight</a><a href="week.html" data-cur="the week">week</a><a href="tram.html" data-cur="the 28">tram</a></nav>
+          <nav class="rb__r"><a href="#hall" data-cur="1931">hall</a><a href="#screen" data-cur="9 metres">screen</a><a href="#booth" data-cur="35mm">booth</a><a href="#seats" data-cur="94 seats">seats</a></nav>
+          <p class="rb__lang"><b>en</b><span>pt</span></p>
+          <a class="rb__buy" href="#seats" data-cur="tonight">pick a seat <b>€6</b></a>
+        </header>
+        <h1 class="rb__title"><span class="rb__ln"><span>THE</span></span><span class="rb__ln rb__ln--in"><span>ROOM</span></span><span class="rb__ln"><span class="rb__out">1931</span></span></h1>
+        <p class="rb__meta">94 seats &nbsp;|&nbsp; one screen, 35mm &amp; dcp</p>
+        <button class="rb__lights" type="button" aria-label="house lights" data-cur="house lights"><i></i></button>
+        <p class="rb__head" data-f="rbh">one screen.<br>one film.<br>no second show.</p>
+        <dl class="rb__facts">
+          <div><dt>built:</dt><dd>1931</dd></div>
+          <div><dt>closed:</dt><dd>1987 – 2019</dd></div>
+          <div><dt>projector:</dt><dd>35mm, 1962</dd></div>
+        </dl>
+        <div class="rb__ctrl">
+          <p><b data-f="rbn">01</b> / 04</p>
+          <i class="rb__bar"><i></i></i>
+          <button type="button" class="rb__prev" aria-label="previous" data-cur="back"><i></i></button>
+          <button type="button" class="rb__next" aria-label="next" data-cur="next"><i></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 02 · four rooms in one — after INTRO: red, a rounded window, a giant word, a side tab, a big number. the slides stack ═══ -->
+    <section class="ri">
+      <article class="ri__s" id="hall">
+        <p class="ri__top"><span>LAST SHOW</span><span>the room</span><span>rua da rosa 113</span></p>
+        <figure class="ri__win slot" data-img="ROOM/hall.jpg" data-tone="tungsten" data-note="the facade on rua da rosa, 1931"></figure>
+        <h2 class="ri__w">Hall</h2>
+        <p class="ri__p">built in 1931 as a neighbourhood picture house, closed in 1987, opened again in 2019 by people who couldn’t stand walking past it in the dark. the tiles in the foyer are original. so is the draught.</p>
+        <p class="ri__tab">since 1931</p>
+        <b class="ri__n">1</b>
+      </article>
+      <article class="ri__s" id="screen">
+        <p class="ri__top"><span>LAST SHOW</span><span>the room</span><span>rua da rosa 113</span></p>
+        <figure class="ri__win slot" data-img="ROOM/screen.jpg" data-tone="night" data-note="the screen with the lights half down"></figure>
+        <h2 class="ri__w">Screen</h2>
+        <p class="ri__p">one screen, nine metres wide, a little warped on the left since the winter of 1996. every film is shown in the shape it was shot in, and the black curtains move to meet it: wide for la la land, almost square for in the mood for love.</p>
+        <p class="ri__tab">9 metres</p>
+        <b class="ri__n">2</b>
+      </article>
+      <article class="ri__s" id="booth">
+        <p class="ri__top"><span>LAST SHOW</span><span>the room</span><span>rua da rosa 113</span></p>
+        <figure class="ri__win slot" data-img="ROOM/booth.jpg" data-tone="night" data-note="the 35mm projector in the booth"></figure>
+        <h2 class="ri__w">Booth</h2>
+        <p class="ri__p">a 35mm projector from 1962 and a digital one for the films that only exist as files. the projectionist changes reels by hand and has missed a changeover exactly once. ask her about it after the film.</p>
+        <p class="ri__tab">35mm · 1962</p>
+        <b class="ri__n">3</b>
+      </article>
+      <article class="ri__s" id="seats-intro">
+        <p class="ri__top"><span>LAST SHOW</span><span>the room</span><span>rua da rosa 113</span></p>
+        <figure class="ri__win slot" data-img="ROOM/seats.jpg" data-tone="neon" data-note="the red seats, row f"></figure>
+        <h2 class="ri__w">Seats</h2>
+        <p class="ri__p">ninety-four red seats in ten rows, no second show. row f is the best one. seat f7 is never sold: it belongs to the man who reopened the room, and he still comes on fridays.</p>
+        <p class="ri__tab">94 seats</p>
+        <b class="ri__n">4</b>
+      </article>
+    </section>
+
+    <!-- ═══ 03 · pick a seat — the real map of the room, tonight’s taken seats, your ticket ═══ -->
+    <section class="st" id="seats">
+      <header class="st__head">
+        <h2 class="st__h">PICK A SEAT</h2>
+        <ol class="st__nights" aria-label="the nights"></ol>
+      </header>
+      <div class="st__body">
+        <div class="st__room">
+          <div class="st__screen"><span>screen</span></div>
+          <div class="st__rows" role="grid" aria-label="seats"></div>
+          <ul class="st__legend mono">
+            <li><i class="s"></i>free</li><li><i class="s s--x"></i>taken</li><li><i class="s s--me"></i>yours</li><li><i class="s s--f7"></i>never sold</li>
+          </ul>
+        </div>
+        <aside class="st__tkt" aria-live="polite">
+          <div class="tk">
+            <p class="tk__top"><b>LAST SHOW</b><span>admit one</span></p>
+            <h3 class="tk__film" data-f="tkfilm">la la land</h3>
+            <p class="tk__when" data-f="tkwhen">friday 20.11 · doors 23:00 · film 23:40</p>
+            <div class="tk__seat"><div><small>row</small><b data-f="tkrow">—</b></div><div><small>seat</small><b data-f="tkseat">—</b></div><div><small>price</small><b>€6</b></div></div>
+            <p class="tk__note" data-f="tknote">pick a free seat on the map.</p>
+            <i class="tk__cut" aria-hidden="true"></i>
+            <p class="tk__bar" aria-hidden="true"></p>
+            <p class="tk__tram mono" data-f="tktram">lights up 01:48 · last 28 at 01:52</p>
+          </div>
+          <button class="st__hold" type="button" disabled data-cur="hold it">hold this seat</button>
+          <p class="st__small mono">held seats wait for you until 23:30. pay at the door, cash or card. no booking fee, no account.</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div class="ft__top">
+      <div class="ft__logo"><b>L A S T &nbsp;S H O W</b><span>lisboa · one screen</span><span>est. 1931 · again 2019</span></div>
+      <div class="ft__mid mono"><span>no trailers. no ads.</span><span>phones off, hearts on.</span><span>press L for house lights.</span></div>
+      <div class="ft__right mono">
+        <p>if you’d like a seat, a private screening or just to say the film made you cry, write to us.</p>
+        <a href="mailto:hello@lastshow.pt" data-cur="write">hello@lastshow.pt</a>
+        <p class="ft__addr">LAST SHOW cinema<br>rua da rosa 113, bairro alto<br>1200-385 lisboa, portugal<br>tue–sun · doors 23:00 · film 23:40</p>
+      </div>
+    </div>
+    <div class="ft__bottom">
+      <h2 class="ft__h">SEE YOU<br>AT 23:40</h2>
+      <span class="mono">© LAST SHOW 2026 · a concept cinema</span>
+      <span class="ft-sign">concept, design &amp; code by ghostly.grl ♥</span>
+    </div>
+  </footer>
+
+  <!-- house lights (press L / konami) -->
+  <div class="lights" aria-hidden="true"><p class="mono">phones off. the film is starting.</p></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js?v=11"></script>
+  <script src="js/room.js?v=2"></script>
+</body>
+</html>
+<!--
+          ___________________
+         |  _______________  |       /\_/\
+         | |               | |      ( o.o )  <3
+         | |  THE ROOM     | |       > ^ <
+         | |_______________| |      (")_(")
+         |___________________|      row f, seat 7
+
+   ┌─┐┬ ┬┌─┐┌─┐┌┬┐┬ ┬ ┬  ┌─┐┬─┐┬
+   │ ┬├─┤│ │└─┐ │ │ └┬┘  │ ┬├┬┘│
+   └─┘┴ ┴└─┘└─┘ ┴ ┴─┘┴ o └─┘┴└─┴─┘ ♥
+
+   LAST SHOW · lisboa · one film a night, then the tram.
+-->

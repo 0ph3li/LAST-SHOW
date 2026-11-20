@@ -1,0 +1,348 @@
+<!doctype html>
+<!--
+  ═══════════════════════════════════════════════════════════════
+   LAST SHOW — a one-screen cinema in bairro alto, lisboa
+   one film a night, at 23:40. it ends before the last tram.
+   concept, design & code by ghostly.grl ♥
+  ═══════════════════════════════════════════════════════════════
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LAST SHOW — 23:40, bairro alto</title>
+  <meta name="description" content="LAST SHOW is a one-screen cinema in bairro alto, lisboa. one film a night, at 23:40. it always ends before the last tram.">
+  <meta name="author" content="ghostly.grl">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,300..800;1,400..600&family=IBM+Plex+Mono:wght@400;500&family=Monsieur+La+Doulaise&family=Italiana&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/home.css?v=8">
+</head>
+<body class="pg-home is-loading">
+
+  <!-- ═══ loader: every second a different night, until 23:40:00 — then the last still opens into the hero ═══ -->
+  <div class="ld" aria-hidden="true">
+    <p class="ld__top"><b>LAST SHOW</b><span>every night : one film</span><span>bairro alto, lisboa</span></p>
+    <div class="ld__frame"></div>
+    <div class="ld__cap"><b class="ld__d">--.--.----</b><b class="ld__t">23:39:52</b><span class="ld__f">tonight’s film starts at 23:40</span></div>
+    <p class="ld__bot"><span>doors 23:00</span><span>film 23:40</span><span>last 28 01:52</span></p>
+  </div>
+
+  <!-- ═══ cursor ═══ -->
+  <div class="cur" aria-hidden="true"><i class="cur__dot"></i><span class="cur__lbl"></span></div>
+
+  <!-- ═══ fixed bar (shows after the hero) ═══ -->
+  <header class="bar">
+    <a href="index.html" class="bar__logo" data-cur="home">LS<i></i></a>
+    <p class="bar__clock mono"><span>lisboa</span> <b data-clock>--:--</b> <em data-next>·</em></p>
+    <nav class="bar__nav">
+      <a href="tonight.html" data-cur="tonight">tonight</a>
+      <a href="week.html" data-cur="the week">week</a>
+      <a href="room.html" data-cur="94 seats">room</a>
+      <a href="tram.html" data-cur="the 28">tram</a>
+      <a href="visit.html" data-cur="find us">visit</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ═══ 01 · hero — after FIGUREFILM: the giant broken title over a still ═══ -->
+    <section class="hero" data-bar="hide">
+      <figure class="hero__img slot" data-img="HOME/hero.jpg" data-tone="tungsten" data-note="someone half hidden behind the red seats, curtain closed"></figure>
+      <div class="hero__shade"></div>
+
+      <h1 class="hero__title" aria-label="LAST SHOW">
+        <span class="ht">
+          <span class="ht__l">L</span><span class="ht__l ht__l--bar">A</span><span class="ht__stack"><span>S</span><span>T</span></span><span class="ht__gap"></span><span class="ht__l">S</span><span class="ht__l ht__l--cut">H</span><span class="ht__l ht__l--bar">O</span><span class="ht__l">W</span>
+        </span>
+      </h1>
+
+      <div class="hero__row">
+        <nav class="hero__soc mono">
+          <a href="#" data-cur="ig">ig</a><a href="#" data-cur="letterboxd">lbxd</a><a href="#" data-cur="newsletter">post</a>
+        </nav>
+        <nav class="hero__nav">
+          <a href="tonight.html" data-cur="tonight">tonight</a>
+          <a href="week.html" data-cur="the week">week</a>
+          <a href="room.html" data-cur="94 seats">room</a>
+          <a href="tram.html" data-cur="the 28">tram</a>
+          <a href="visit.html" data-cur="find us">visit</a>
+        </nav>
+      </div>
+
+      <a href="tonight.html" class="pill hero__pill mag" data-cur="take a seat">
+        <small>23:40</small><b>see tonight</b><small>94 seats</small>
+      </a>
+      <i class="hero__dot" aria-hidden="true"></i>
+
+      <div class="hero__foot mono">
+        <span class="kick">one screen · one film · one night</span>
+        <span class="hero__count"><em data-state>next show in</em> <b data-count>--:--:--</b></span>
+        <span>rua da rosa 113 · bairro alto</span>
+      </div>
+    </section>
+
+
+    <!-- ═══ 02 · whisper — after WHISPER FROM THE OCEAN: black, yellow serif, an arch onto the river ═══ -->
+    <section class="wh" id="whisper">
+      <h2 class="wh__t" aria-label="After the film, the river">
+        <span class="wh__line">AFTER THE FILM,</span>
+        <span class="wh__line">THE RIVER</span>
+      </h2>
+      <i class="wh__dot" aria-hidden="true"></i>
+      <ul class="wh__meta">
+        <li>LAST SHOW</li><li>SANTA CATARINA</li><li>4 MIN ON FOOT</li><li>AFTER 01:20</li><li>AUTUMN 2026</li>
+      </ul>
+      <div class="wh__arch" data-cur="after the film">
+        <div class="wh__win"><figure class="wh__img slot" data-img="HOME/river.jpg" data-tone="tejo" data-note="through a dark stone arch: the tejo at night or dusk, two people on folding chairs, backs to us"></figure></div>
+        <p class="wh__cap mono"><span>miradouro de santa catarina</span><span>where most of row f goes before the tram</span></p>
+      </div>
+    </section>
+
+    <!-- ═══ 03 · tonight — after FRAMEHAUS: echo title + review cards ═══ -->
+    <section class="tn" id="tonight">
+      <h2 class="echo" aria-label="Tonight">
+        <span class="echo__w echo__w--a" aria-hidden="true">TONIGHT</span>
+        <span class="echo__w echo__w--b" aria-hidden="true">TONIGHT</span>
+        <span class="echo__w echo__w--main">TONIGHT</span>
+        <span class="echo__w echo__w--c" aria-hidden="true">TONIGHT</span>
+        <span class="echo__w echo__w--d" aria-hidden="true">TONIGHT</span>
+      </h2>
+      <p class="tn__lead"><i></i><span>an independent one-screen cinema in bairro alto.<br>one film a night, at 23:40. it ends before the last tram.</span><i></i></p>
+
+      <div class="tn__cards">
+        <article class="card" data-card="0">
+          <figure class="card__img slot" data-tone="sea" data-note="tonight’s film: a wide still, a face against a dusk sky"></figure>
+          <div class="card__shade"></div>
+          <p class="card__tl"><b data-f="year">1994</b><i></i><span data-f="dir">wim wenders</span></p>
+          <ul class="card__tr" data-f="quotes"></ul>
+          <div class="card__bl">
+            <p class="card__k mono" data-f="label">tonight · 23:40</p>
+            <h3 class="card__t" data-f="title">perfect days</h3>
+            <p class="card__d mono" data-f="meta">runtime 100′ · ends 01:20</p>
+          </div>
+          <a href="tonight.html" class="card__go mag" data-cur="take a seat"><i></i>take a seat<i></i></a>
+        </article>
+        <article class="card" data-card="1">
+          <figure class="card__img slot" data-tone="amber" data-note="tomorrow’s film: an older face, warm interior, by a window"></figure>
+          <div class="card__shade"></div>
+          <p class="card__tl"><b data-f="year">2000</b><i></i><span data-f="dir">wong kar-wai</span></p>
+          <ul class="card__tr" data-f="quotes"></ul>
+          <div class="card__bl">
+            <p class="card__k mono" data-f="label">tomorrow · 23:40</p>
+            <h3 class="card__t" data-f="title">in the mood for love</h3>
+            <p class="card__d mono" data-f="meta">runtime 98′ · ends 01:18</p>
+          </div>
+          <a href="week.html" class="card__go mag" data-cur="the week"><i></i>the week<i></i></a>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ═══ 04 · saudade — after INNERSTATE: a giant red word, the city blurs, one person stands still ═══ -->
+    <section class="sd" id="saudade">
+      <div class="sd__frame">
+        <figure class="sd__img slot" data-img="HOME/street.jpg" data-tone="street" data-note="a street in bairro alto at night: one person standing still, eyes closed; everyone around them a motion blur"></figure>
+        <p class="sd__logo"><i></i>LS.</p>
+        <a href="tonight.html" class="sd__menu mag" data-cur="take a seat">TONIGHT</a>
+        <h2 class="sd__w" aria-label="Saudade">SAUDADE</h2>
+        <figure class="sd__fig slot no-label" data-img="HOME/street-figure.png" data-tone="none" aria-hidden="true"></figure>
+        <p class="sd__l">SAUDADE: MISSING SOMETHING YOU LOVED, EVEN WHILE IT’S STILL HAPPENING. IT’S WHAT A FILM FEELS LIKE IN ITS LAST TEN MINUTES. WE SHOW ONE A NIGHT, SO YOU HAVE SOMEWHERE TO PUT IT.</p>
+        <p class="sd__r">TWO HOURS OF STILLNESS<br>IN A LOUD CITY.</p>
+      </div>
+    </section>
+
+    <!-- ═══ 05 · manifesto — after THE LOVERS: gold serif, letters fill as you read ═══ -->
+    <section class="lv">
+      <figure class="lv__img slot" data-img="HOME/lovers.jpg" data-tone="night" data-note="two faces almost touching, at night, a city out of focus behind"></figure>
+      <div class="lv__shade"></div>
+      <p class="lv__top serif">the last one</p>
+      <p class="lv__tl serif">one film.<br>one night.<br>then the tram.</p>
+      <p class="lv__trr serif">what would you watch<br>if you knew<br>it was the last one?</p>
+      <h2 class="lv__title serif" aria-label="The Last Show">
+        <span class="lv__word">The</span>
+        <span class="lv__word">Last</span>
+        <span class="lv__word">Show</span>
+      </h2>
+      <div class="lv__cols serif">
+        <p>we open at night and show one film, once. no trailers, no ads, no second screening. if you miss it, it’s gone, the way a night is gone.</p>
+        <p>every film is picked to end before the last 28 leaves camões. we do the maths so you can cry at the end and still make it home.</p>
+      </div>
+      <span class="lv__bl serif">est. 1931</span>
+      <span class="lv__br serif">LS</span>
+    </section>
+
+    <!-- ═══ 06 · the week — after FIGUREFILM featured work: blue grid, aspect ratios ═══ -->
+    <section class="wk" id="week">
+      <div class="wk__grid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <h2 class="wk__h wk__h--a">THIS</h2>
+      <h2 class="wk__h wk__h--b">WEEK</h2>
+      <div class="wk__badges mono" aria-hidden="true">
+        <span>one screen</span><span>35mm &amp; dcp</span><span>no trailers</span><span>23:40</span>
+      </div>
+      <p class="wk__note mono">we are a one-screen cinema in a 1931 building in bairro alto. one film a night, chosen to end before the last tram. monday the screen rests.</p>
+
+      <div class="wk__stage">
+        <div class="wk__frame" data-cur="watch">
+          <figure class="wk__img slot" data-tone="tungsten" data-note="a still from each night’s film (the frame changes to its aspect ratio)"></figure>
+          <span class="wk__n mono">01</span>
+          <span class="wk__day mono">tuesday</span>
+          <p class="wk__t">perfect days</p>
+        </div>
+        <ol class="wk__days mono"></ol>
+      </div>
+      <a href="week.html" class="pill wk__pill mag" data-cur="the week"><small>tue</small><b>view all</b><small>sun</small></a>
+      <div class="wk__ratios mono" aria-hidden="true"></div>
+    </section>
+
+    <!-- ═══ 07 · the room — after INTRO: red, a rounded window, one screen ═══ -->
+    <section class="rm" id="room">
+      <p class="rm__top mono"><span>cinema</span><span>one screen</span><span>bairro alto</span></p>
+      <div class="rm__win">
+        <figure class="rm__img slot" data-img="HOME/room.jpg" data-tone="velvet" data-note="the room: red curtain, rows of seats, small lights on the wall"></figure>
+        <div class="rm__in">
+          <h2 class="rm__h">Room</h2>
+          <p class="rm__p">a 1931 cinema on rua da rosa, closed in 1987, opened again by people who couldn’t stand walking past it in the dark. ninety-four red seats, one screen, one projector called dona amália. the floor creaks on row f. the seat f7 is never sold.</p>
+        </div>
+      </div>
+      <a href="room.html" class="rm__tab" data-cur="the room"><span>94 seats</span></a>
+      <ul class="rm__stats mono">
+        <li><b data-to="94">0</b><span>seats</span></li>
+        <li><b data-to="1">0</b><span>screen</span></li>
+        <li><b data-to="1931">0</b><span>since</span></li>
+        <li><b data-to="0">0</b><span>trailers</span></li>
+      </ul>
+      <b class="rm__big" aria-hidden="true">1</b>
+      <b class="rm__year" aria-hidden="true">1931</b>
+    </section>
+
+    <!-- ═══ 08 · the last tram — after SUNRISE: aqua one-sheet, red heavy title ═══ -->
+    <section class="tr" id="tram">
+      <div class="tr__poster">
+        <p class="tr__row"><span>TONIGHT 23:40</span><span data-f="date">--.--.2026</span><span>LAST 28 · 01:52</span></p>
+        <div class="tr__frame">
+          <figure class="tr__img slot" data-img="HOME/tram.jpg" data-tone="car" data-note="inside the 28 at night: two people by the window, red/orange light, a cool green street outside"></figure>
+          <p class="tr__kick"><span>a true story</span><i></i><span>every night since 2019</span></p>
+          <p class="tr__copy">after the credits you have <b data-f="walk">3</b> minutes, downhill, to camões. the last 28 leaves at 01:52. tonight the film ends at <b data-f="end">01:20</b>. <span data-f="verdict">you make it.</span></p>
+          <ul class="tr__laurels">
+            <li><b>94</b><b>seats</b><small>one screen</small></li>
+            <li><b>0</b><b>trailers</b><small>lights down 23:40</small></li>
+            <li><b>3 min</b><b>walk</b><small>to camões</small></li>
+          </ul>
+          <span class="tr__fl">rua da rosa 113</span><span class="tr__fr">camões, line 28</span>
+        </div>
+        <p class="tr__star"><small>starring</small> You <small>and</small> The 28 <small>film by</small> The Timetable</p>
+        <h2 class="tr__title" aria-label="Last tram"><span class="tr__tw">LAST&nbsp;TRAM</span></h2>
+        <p class="tr__row"><span>© LAST SHOW 2026</span><span>ONE SCREEN · ONE FILM · ONE TRAM</span><span>TUE–SUN</span></p>
+      </div>
+    </section>
+
+    <!-- ═══ 09 · the walk — after SKĄD DOKĄD: from where, to where. a green band between two seats ═══ -->
+    <section class="sk" id="walk">
+      <figure class="sk__top slot" data-img="HOME/walk-seats.jpg" data-tone="duo" data-note="empty seats seen from behind, inside the tram or the cinema, black &amp; white, lit orange-green at the edges"></figure>
+      <div class="sk__band">
+        <p class="sk__q">will you make the last 28?</p>
+        <div class="sk__line">
+          <b class="sk__w">rua da rosa</b>
+          <div class="sk__track" aria-hidden="true">
+            <i class="sk__rail"></i>
+            <span class="sk__you"><em>you</em></span>
+            <span class="sk__car"><em>28</em></span>
+            <span class="sk__tick" style="--x:0%"></span><span class="sk__tick" style="--x:100%"></span>
+          </div>
+          <b class="sk__w">camões</b>
+        </div>
+        <div class="sk__ctrl">
+          <label class="sk__range">
+            <span class="mono">credits</span>
+            <input type="range" min="0" max="12" value="3" step="1" data-cur="drag" aria-label="minutes you stay for the credits">
+            <span class="mono"><b data-f="cred">3</b> min</span>
+          </label>
+          <div class="sk__films mono" role="tablist" aria-label="pick a night"></div>
+        </div>
+      </div>
+      <div class="sk__bot">
+        <figure class="sk__img slot" data-img="HOME/walk-driver.jpg" data-tone="duo" data-note="the driver of the 28 from behind, hand on the controls, black &amp; white, the windscreen orange-green"></figure>
+        <p class="sk__film"><small>tonight’s walk</small><b>3 minutes, downhill</b></p>
+        <p class="sk__credits" data-f="res">film ends 01:20 · credits 3′ · walk 3′ · you reach camões at 01:26 · 26 min to spare</p>
+      </div>
+    </section>
+
+    <!-- ═══ 10 · last shows — after CHERNOBYL: an episode guide. one big still, the nights listed on the right ═══ -->
+    <section class="ep" id="archive">
+      <div class="ep__panel">
+        <div class="ep__imgs" aria-hidden="true"></div>
+        <div class="ep__shade"></div>
+        <svg class="ep__ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="49" pathLength="100"/></svg>
+        <header class="ep__top">
+          <b class="ep__logo">LS<i></i></b>
+          <p class="ep__tags mono"><span>35mm</span><span>m/12</span><span class="ep__menu" aria-hidden="true"><i></i><i></i><i></i></span></p>
+        </header>
+        <button class="ep__play" type="button" aria-label="next night" data-cur="next night"><i></i></button>
+        <div class="ep__copy">
+          <p class="ep__kick mono">the last shows · sixteen nights we remember</p>
+          <h2 class="ep__title" data-f="ept">tabu</h2>
+          <p class="ep__line" data-f="epl"></p>
+        </div>
+        <p class="ep__num"><b data-f="epn">01</b><span data-f="epd">14.03.2025 ›</span></p>
+        <div class="ep__listwrap"><ol class="ep__list" aria-label="the last shows"></ol></div>
+        <div class="ep__bar" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <!-- ═══ 11 · the end — after THANK YOU: a blurred still pulls into focus ═══ -->
+    <section class="end">
+      <figure class="end__img slot" data-img="HOME/end.jpg" data-tone="ember" data-note="an extreme close-up, very out of focus: hands, a ticket, warm colour"></figure>
+      <figure class="end__img end__img--sharp slot no-label" data-img="HOME/end.jpg" data-tone="ember" aria-hidden="true"></figure>
+      <div class="end__shade"></div>
+      <h2 class="end__h">OBRIGADO</h2>
+      <p class="end__p">for a seat or a question, write to <a href="mailto:hello@lastshow.pt" data-cur="write">hello@lastshow.pt</a></p>
+    </section>
+
+  </main>
+
+  <!-- ═══ footer — after FIGUREFILM: black, mono, big sign-off ═══ -->
+  <footer class="ft">
+    <div class="ft__top">
+      <div class="ft__logo"><b>L A S T &nbsp;S H O W</b><span>lisboa · one screen</span><span>est. 1931 · again 2019</span></div>
+      <div class="ft__mid mono"><span>no trailers. no ads.</span><span>phones off, hearts on.</span><span>press L for house lights.</span></div>
+      <div class="ft__right mono">
+        <p>if you’d like a seat, a private screening or just to say the film made you cry, write to us.</p>
+        <a href="mailto:hello@lastshow.pt" data-cur="write">hello@lastshow.pt</a>
+        <p class="ft__addr">LAST SHOW cinema<br>rua da rosa 113, bairro alto<br>1200-385 lisboa, portugal<br>tue–sun · doors 23:00 · film 23:40</p>
+      </div>
+    </div>
+    <div class="ft__bottom">
+      <h2 class="ft__h">SEE YOU<br>AT 23:40</h2>
+      <span class="mono">© LAST SHOW 2026 · a concept cinema</span>
+      <span class="ft-sign">concept, design &amp; code by ghostly.grl ♥</span>
+    </div>
+  </footer>
+
+  <!-- house lights (press L / konami) -->
+  <div class="lights" aria-hidden="true"><p class="mono">phones off. the film is starting.</p></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js?v=11"></script>
+  <script src="js/home.js?v=9"></script>
+</body>
+</html>
+<!--
+          ___________________
+         |  _______________  |       /\_/\
+         | |               | |      ( o.o )  <3
+         | |  LAST  SHOW   | |       > ^ <
+         | |_______________| |      (")_(")
+         |___________________|      row f, seat 7
+
+   ┌─┐┬ ┬┌─┐┌─┐┌┬┐┬ ┬ ┬  ┌─┐┬─┐┬
+   │ ┬├─┤│ │└─┐ │ │ └┬┘  │ ┬├┬┘│
+   └─┘┴ ┴└─┘└─┘ ┴ ┴─┘┴ o └─┘┴└─┴─┘ ♥
+
+   LAST SHOW · lisboa · one film a night, then the tram.
+-->
